@@ -11,9 +11,9 @@ def splitlist(inputlist):
 def find(lines):
     count = 0
     for line in lines :
-        count = count +1
+        count = (count +1)
         t = line.replace("\n", "")
-        print(t , " " , count)
+        print(t , " " , count*8)
         global stop_threads
         if (bcrypt.hashpw(t.encode('utf-8'), hashed)) == hashed:
             stop_threads = True
@@ -26,7 +26,8 @@ f=open("fr2.txt","r",encoding='utf-8')
 lines=f.readlines()
 f.close()
 
-hashed = b"$2y$10$W.7yC2CAQXRu0X3gkYk/2uh5gO4EaxX3Cl6H5ERNDTDHmmKnM0sKu"
+password = input("Enter hashed password, example: $2y$10$JcHq2SY9FFk2ngaQ9ZuXTOaGaHNhj8fWYR2E.tv0LLIBBspaYEOA. \nYour turn now: ")
+hashed = bytes(password.encode('utf-8'))
 
 first,sec,three,four, five, six, seven , eight =splitlist(lines)
 
