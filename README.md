@@ -2,7 +2,9 @@
 ```bash
 py main.py
 ````
-to start the program
+to start the 8threads program
+
+There is the code, if you want to use it:
 
 ```python
 #!/usr/bin/env python3
