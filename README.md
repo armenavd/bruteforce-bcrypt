@@ -1,4 +1,8 @@
 # bruteforce-bcrypt
+
+The National Cyber Security Centre (NCSC) has published a [list of the 100,000 most common passwords](ncsc.gov.uk/static-assets/documents/PwnedPasswordsTop100k.txt).
+
+
 ```bash
 py main.py
 ````
